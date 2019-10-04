@@ -54,7 +54,6 @@ void display() {
 		}
 	}
 	//==============================================
-	
 }
 
 // Sets up global attributes like clear color and drawing color, and sets up
