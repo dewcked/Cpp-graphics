@@ -46,7 +46,6 @@ void display() {
 					for (int l = 0; l < 4; l++) {
 						glColor3f(z/3.0, i/3.0, j/3.0);
 						glVertex3f(x + linelen * face[k][l][0] + j * 0.45, linelen * face[k][l][1] + i * 0.45, linelen * face[k][l][2] + z * 0.45);
-
 					}
 					glEnd();
 				}
