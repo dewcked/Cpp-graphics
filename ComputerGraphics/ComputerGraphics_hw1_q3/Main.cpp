@@ -84,7 +84,7 @@ int main(int argc, char** argv) {
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowPosition(80, 80);
 	glutInitWindowSize(800, 600);
-	glutCreateWindow("A Simple Torus");
+	glutCreateWindow("201511779 °­Âù¿ì");
 	glutDisplayFunc(display);
 	init();
 	glutMainLoop();
