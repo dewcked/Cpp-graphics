@@ -28,64 +28,34 @@ void display() {
 	glEnd();
 
 	//============================================== lets make cube
-	float x = 4.5;
+	float x = 4;
+	float linelen = 0.2;
+	int face[6][4][3] = {
+		{{1,-1, -1},{1, -1, 1}, {-1, -1, 1}, {-1, -1, -1}},
+		{{1, -1, -1}, {1, 1, -1}, {-1,1, -1}, {-1, -1, -1}},
+		{{-1, -1, 1}, {-1, 1, 1}, {-1, 1, -1}, {-1, -1, -1}},
+		{{1, -1, -1}, {1, 1, -1}, {1, 1, 1}, {1, -1, 1}},
+		{{1,1, 1}, {1, 1, -1}, {-1, 1, -1}, {-1, 1, 1}},
+		{{1, -1, 1}, {1, 1, 1}, {-1, 1, 1}, {-1, -1, 1}}
+	};
+	for (int z = 0; z < 3; z++) {
+		for (int i = 0; i < 3; i++) {
+			for (int j = 0; j < 3; j++) {
+				for (int k = 0; k < 6; k++) {
+					glBegin(GL_POLYGON);
+					for (int l = 0; l < 4; l++) {
+						glColor3f(z/3.0, i/3.0, j/3.0);
+						glVertex3f(x + linelen * face[k][l][0] + j * 0.45, linelen * face[k][l][1] + i * 0.45, linelen * face[k][l][2] + z * 0.45);
 
-	// Red side - BOTTOM
-	glBegin(GL_POLYGON);
-	glColor3f(1.0, 0.0, 0.6);
-	glVertex3f(x + 0.5, -0.5, -0.5);
-	glVertex3f(x + 0.5, -0.5, 0.5);
-	glVertex3f(x - 0.5, -0.5, 0.5);
-	glVertex3f(x - 0.5, -0.5, -0.5);
-	glEnd();
-
-	//Multi-colored side - Back
-	glBegin(GL_POLYGON);
-	glColor3f(1.0, 0.0, 0.0);     glVertex3f(x+0.5, -0.5, -0.5);      // P1 is red
-	glColor3f(0.0, 1.0, 0.0);     glVertex3f(x+0.5, 0.5, -0.5);      // P2 is green
-	glColor3f(0.0, 0.0, 1.0);     glVertex3f(x-0.5, 0.5, -0.5);      // P3 is blue
-	glColor3f(1.0, 0.0, 1.0);     glVertex3f(x-0.5, -0.5, -0.5);      // P4 is purple
-	glEnd();
-
-
-
-	// Green side - LEFT
-	glBegin(GL_POLYGON);
-	glColor3f(0.5, 0.5, 0.5);
-	glVertex3f(x - 0.5, -0.5, 0.5);
-	glVertex3f(x - 0.5, 0.5, 0.5);
-	glVertex3f(x - 0.5, 0.5, -0.5);
-	glVertex3f(x - 0.5, -0.5, -0.5);
-	glEnd();
-
-	// Purple side - RIGHT
-	glBegin(GL_POLYGON);
-	glColor3f(0.6, 0.3, 0.2);
-	glVertex3f(x+0.5, -0.5, -0.5);
-	glVertex3f(x+0.5, 0.5, -0.5);
-	glVertex3f(x+0.5, 0.5, 0.5);
-	glVertex3f(x+0.5, -0.5, 0.5);
-	glEnd();
-
-	// Blue side - TOP
-	glBegin(GL_POLYGON);
-	glColor3f(0.1, 0.3, 1.9);
-	glVertex3f(x+0.5, 0.5, 0.5);
-	glVertex3f(x+0.5, 0.5, -0.5);
-	glVertex3f(x-0.5, 0.5, -0.5);
-	glVertex3f(x-0.5, 0.5, 0.5);
-	glEnd();
-
-	//Front???
-	glBegin(GL_POLYGON);
-	glColor3f(0.2, 0.7, 1.0);
-	glVertex3f(x + 0.5, -0.5, 0.5);
-	glVertex3f(x + 0.5, 0.5, 0.5);
-	glVertex3f(x - 0.5, 0.5, 0.5);
-	glVertex3f(x - 0.5, -0.5, 0.5);
-	glEnd();
+					}
+					glEnd();
+				}
+				glFlush();
+			}
+		}
+	}
 	//==============================================
-	glFlush();
+	
 }
 
 // Sets up global attributes like clear color and drawing color, and sets up
