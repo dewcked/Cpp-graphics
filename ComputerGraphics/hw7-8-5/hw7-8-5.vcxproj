@@ -20,11 +20,10 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{94c86b79-5ae7-41f4-9343-c869979d7a21}</ProjectGuid>
+    <ProjectGuid>{52439352-7227-4cfd-8043-067efc9960f0}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>hw7_8</RootNamespace>
+    <RootNamespace>hw7_8_5</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>hw7-8_base</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
