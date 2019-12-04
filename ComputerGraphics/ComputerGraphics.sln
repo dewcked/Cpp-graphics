@@ -31,15 +31,17 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hw7-8-6", "7-8-6\7-8-6.vcxp
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hw7-8-7", "hw7-8-7\hw7-8-7.vcxproj", "{191132D2-9965-47F8-BC70-0DC983C41C78}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hw-7-8-8", "hw-7-8-8\hw-7-8-8.vcxproj", "{E38CDA7E-B78F-4CF0-9932-BEE31785C414}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hw7-8-8", "hw-7-8-8\hw-7-8-8.vcxproj", "{E38CDA7E-B78F-4CF0-9932-BEE31785C414}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hw-7-9_base", "hw-7-9-base\hw-7-9-base.vcxproj", "{325D9071-4FB7-4C05-9021-C950425DB0BD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hw7-9_base", "hw-7-9-base\hw-7-9-base.vcxproj", "{325D9071-4FB7-4C05-9021-C950425DB0BD}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hw7-9-1", "hw7-9-1\hw7-9-1.vcxproj", "{7C1FCCED-7EA6-492E-9D8F-25F7DE4C3CC4}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hw7-9-2", "hw7-9-2\hw7-9-2.vcxproj", "{BC11E86F-50AB-458C-AC52-DE57365025D8}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hw7-9-3", "hw7-9-3\hw7-9-3.vcxproj", "{2F85EB1E-4F3C-4833-847A-02C083D9E8B9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hw3", "hw3\hw3.vcxproj", "{F996EABD-6BA2-455A-8A9C-526A942C5338}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -201,6 +203,14 @@ Global
 		{2F85EB1E-4F3C-4833-847A-02C083D9E8B9}.Release|x64.Build.0 = Release|x64
 		{2F85EB1E-4F3C-4833-847A-02C083D9E8B9}.Release|x86.ActiveCfg = Release|Win32
 		{2F85EB1E-4F3C-4833-847A-02C083D9E8B9}.Release|x86.Build.0 = Release|Win32
+		{F996EABD-6BA2-455A-8A9C-526A942C5338}.Debug|x64.ActiveCfg = Debug|x64
+		{F996EABD-6BA2-455A-8A9C-526A942C5338}.Debug|x64.Build.0 = Debug|x64
+		{F996EABD-6BA2-455A-8A9C-526A942C5338}.Debug|x86.ActiveCfg = Debug|Win32
+		{F996EABD-6BA2-455A-8A9C-526A942C5338}.Debug|x86.Build.0 = Debug|Win32
+		{F996EABD-6BA2-455A-8A9C-526A942C5338}.Release|x64.ActiveCfg = Release|x64
+		{F996EABD-6BA2-455A-8A9C-526A942C5338}.Release|x64.Build.0 = Release|x64
+		{F996EABD-6BA2-455A-8A9C-526A942C5338}.Release|x86.ActiveCfg = Release|Win32
+		{F996EABD-6BA2-455A-8A9C-526A942C5338}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
