@@ -120,12 +120,14 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../../3rd_party/GLUT;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../../3rd_party/GLUT;./lib;</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -246,7 +248,12 @@
     <ClInclude Include="include\SDL_vulkan.h" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="res\beach-1838501.jpg" />
+    <Image Include="res\bench-560435.jpg" />
     <Image Include="res\KGU-logo.jpg" />
+    <Image Include="res\Me.jpeg" />
+    <Image Include="res\spring-bird-2295434.jpg" />
+    <Image Include="res\wolf-1341881_1920.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

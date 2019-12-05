@@ -288,5 +288,20 @@
     <Image Include="res\KGU-logo.jpg">
       <Filter>리소스 파일</Filter>
     </Image>
+    <Image Include="res\Me.jpeg">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\wolf-1341881_1920.jpg">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\beach-1838501.jpg">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\bench-560435.jpg">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\spring-bird-2295434.jpg">
+      <Filter>리소스 파일</Filter>
+    </Image>
   </ItemGroup>
 </Project>
